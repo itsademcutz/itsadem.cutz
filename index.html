@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>itsadem.cutz | Premium Barber</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
     <!-- FontAwesome für Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -19,6 +19,150 @@
         body {
             background-color: #0b0b0b;
             color: #ffffff;
-            background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
-            background-position: center
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Logo Bereich - Größer gemacht */
+        .logo-container {
+            margin-bottom: 25px;
+        }
+
+        .logo-container img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #d4af37;
+            object-fit: cover;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ffffff, #c5c5c5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.tagline {
+            font-size: 16px;
+            color: #d1d1d1;
+            margin-bottom: 40px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        /* Termin-Sektion */
+        .section-title {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* Button Styling - Größer & Breiter */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            padding: 20px 24px;
+            margin-bottom: 20px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .btn-snapchat {
+            background-color: #FFFC00;
+            color: #000000;
+        }
+
+        .btn-snapchat:hover {
+            background-color: #e6e300;
+            transform: scale(1.02);
+        }
+
+        .btn-tiktok {
+            background-color: #000000;
+            color: #ffffff;
+            border: 2px solid #25F4EE;
+            box-shadow: 0 0 20px rgba(37, 244, 238, 0.25);
+        }
+
+        .btn-tiktok:hover {
+            background-color: #1a1a1a;
+            transform: scale(1.02);
+        }
+
+        .btn i {
+            font-size: 24px;
+        }
+
+        footer {
+            font-size: 13px;
+            color: #888;
+            margin-top: 30px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo / Profilbild -->
+        <div class="logo-container">
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=400&q=80" alt="itsadem.cutz Logo">
+        </div>
+
+        <h1>itsadem.cutz</h1>
+        <p class="tagline">Professional Haircuts & Styling</p>
+
+        <div class="section-title">Termin vereinbaren</div>
+
+        <!-- Snapchat Button -->
+        <a href="https://www.snapchat.com/add/adem_adeymi" target="_blank" class="btn btn-snapchat">
+            <i class="fa-brands fa-snapchat"></i>
+            Snapchat: adem_adeymi
+        </a>
+
+        <!-- TikTok Button -->
+        <a href="https://www.tiktok.com/@frisurseinvater" target="_blank" class="btn btn-tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+            TikTok: frisurseinvater
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 itsadem.cutz. Alle Rechte vorbehalten.
+    </footer>
+
+</body>
+</html>
